@@ -1,0 +1,111 @@
+{
+    "hands": [
+        {
+            "name": "Flush",
+            "cards": [
+                { "suit": 0, "rank": 8 },
+                { "suit": 0, "rank": 7 },
+                { "suit": 0, "rank": 6 },
+                { "suit": 0, "rank": 3 },
+                { "suit": 0, "rank": 4 }
+            ]
+        },
+        {
+            "name": "FourOfAKind",
+            "cards": [
+                { "suit": 0, "rank": 5 },
+                { "suit": 1, "rank": 5 },
+                { "suit": 2, "rank": 5 },
+                { "suit": 3, "rank": 5 },
+                { "suit": 0, "rank": 4 }
+            ]
+        },
+        {
+            "name": "FullHouse",
+            "cards": [
+                { "suit": 0, "rank": 3 },
+                { "suit": 1, "rank": 3 },
+                { "suit": 2, "rank": 3 },
+                { "suit": 0, "rank": 2 },
+                { "suit": 1, "rank": 2 }
+            ]
+        },
+        {
+            "name": "OnePair",
+            "cards": [
+                { "suit": 0, "rank": 5 },
+                { "suit": 1, "rank": 5 },
+                { "suit": 0, "rank": 2 },
+                { "suit": 0, "rank": 3 },
+                { "suit": 0, "rank": 4 }
+            ]
+        },
+        {
+            "name": "OnePair",
+            "cards": [
+                { "suit": 0, "rank": 5 },
+                { "suit": 1, "rank": 5 }
+            ]
+        },
+        {
+            "name": "RoyalFlush",
+            "cards": [  
+                { "suit": 0, "rank": 14 },
+                { "suit": 0, "rank": 13 },
+                { "suit": 0, "rank": 12 },
+                { "suit": 0, "rank": 11 },
+                { "suit": 0, "rank": 10 }
+            ]
+        },
+        {
+            "name": "StraightFlush",
+            "cards": [
+                { "suit": 0, "rank": 6 },
+                { "suit": 0, "rank": 5 },
+                { "suit": 0, "rank": 4 },
+                { "suit": 0, "rank": 3 },
+                { "suit": 0, "rank": 2 }
+            ]
+        },
+        {
+            "name": "Straight",
+            "cards": [
+                { "suit": 0, "rank": 14 },
+                { "suit": 1, "rank": 5 },
+                { "suit": 2, "rank": 4 },
+                { "suit": 1, "rank": 3 },
+                { "suit": 3, "rank": 2 }
+            ]
+        },
+        {
+            "name": "Straight",
+            "cards": [
+                { "suit": 0, "rank": 6 },
+                { "suit": 1, "rank": 5 },
+                { "suit": 2, "rank": 4 },
+                { "suit": 1, "rank": 3 },
+                { "suit": 3, "rank": 2 }
+            ]
+        },
+        {
+            "name": "ThreeOfAKind",
+            "cards": [
+                { "suit": 0, "rank": 5 },
+                { "suit": 1, "rank": 5 },
+                { "suit": 2, "rank": 5 },
+                { "suit": 0, "rank": 3 },
+                { "suit": 0, "rank": 4 }
+            ]
+        },
+        {
+            "name": "TwoPair",
+            "cards": [
+                { "suit": 0, "rank": 5 },
+                { "suit": 1, "rank": 5 },
+                { "suit": 0, "rank": 2 },
+                { "suit": 1, "rank": 2 },
+                { "suit": 0, "rank": 3 }
+            ]
+        }
+    ]
+}

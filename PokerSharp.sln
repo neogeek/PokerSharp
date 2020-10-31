@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerSharp", "PokerSharp\PokerSharp.csproj", "{8483D106-2337-4A9F-BD6F-04E64FB779C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerSharp.Tests", "PokerSharp.Tests\PokerSharp.Tests.csproj", "{03EEF02C-EE50-4316-B76C-065474014BF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8483D106-2337-4A9F-BD6F-04E64FB779C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8483D106-2337-4A9F-BD6F-04E64FB779C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8483D106-2337-4A9F-BD6F-04E64FB779C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8483D106-2337-4A9F-BD6F-04E64FB779C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03EEF02C-EE50-4316-B76C-065474014BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EEF02C-EE50-4316-B76C-065474014BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EEF02C-EE50-4316-B76C-065474014BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EEF02C-EE50-4316-B76C-065474014BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
