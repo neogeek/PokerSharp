@@ -24,6 +24,8 @@ namespace PokerSharp
 
         }
 
+        public override string ToString() => string.Join(", ", this);
+
         public IEnumerable<Hand> Permutations()
         {
 
