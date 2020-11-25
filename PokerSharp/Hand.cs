@@ -7,6 +7,7 @@ using System.Linq;
 namespace PokerSharp
 {
 
+    [Serializable]
     public class Hand : List<Card>
     {
 
