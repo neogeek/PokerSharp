@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
@@ -58,6 +59,58 @@ namespace PokerSharp.Tests
             {
                 Assert.AreEqual(hand.name, hand.cards.DetermineHandRankings().ToString());
             }
+        }
+
+        [Test]
+        public void TestSortingTwoPair()
+        {
+
+            var hand = new PokerSharp.Hand
+            {
+                new Card { suit = Card.Suit.Hearts, rank = 2 },
+                new Card { suit = Card.Suit.Clubs, rank = 5 },
+                new Card { suit = Card.Suit.Spades, rank = 2 },
+                new Card { suit = Card.Suit.Clubs, rank = 3 },
+                new Card { suit = Card.Suit.Diamonds, rank = 5 }
+            };
+
+            hand.handRanking = hand.DetermineHandRankings();
+
+            Assert.AreEqual(new List<int>
+            {
+                5,
+                5,
+                2,
+                2,
+                3
+            }, hand.SortCardsByRanking(hand.handRanking).Select(card => card.rank));
+
+        }
+
+        [Test]
+        public void TestSortingFlush()
+        {
+
+            var hand = new PokerSharp.Hand
+            {
+                new Card { suit = Card.Suit.Hearts, rank = 4 },
+                new Card { suit = Card.Suit.Clubs, rank = 3 },
+                new Card { suit = Card.Suit.Spades, rank = 6 },
+                new Card { suit = Card.Suit.Clubs, rank = 2 },
+                new Card { suit = Card.Suit.Diamonds, rank = 5 }
+            };
+
+            hand.handRanking = hand.DetermineHandRankings();
+
+            Assert.AreEqual(new List<int>
+            {
+                2,
+                3,
+                4,
+                5,
+                6
+            }, hand.SortCardsByRanking(hand.handRanking).Select(card => card.rank));
+
         }
 
     }

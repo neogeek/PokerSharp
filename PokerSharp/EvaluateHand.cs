@@ -144,6 +144,24 @@ namespace PokerSharp
 
         }
 
+        public static IEnumerable<Card> SortCardsByRanking(this IEnumerable<Card> cards, HandRanking ranking)
+        {
+
+            if (ranking.Equals(HandRanking.OnePair) || ranking.Equals(HandRanking.TwoPair) ||
+                ranking.Equals(HandRanking.ThreeOfAKind) | ranking.Equals(HandRanking.FourOfAKind) |
+                ranking.Equals(HandRanking.FullHouse))
+            {
+
+                return cards.GroupBy(card => card.rank).OrderByDescending(group => group.Count())
+                    .ThenByDescending(group => group.First().rank)
+                    .SelectMany(group => group.Select(card => card));
+
+            }
+
+            return cards.OrderBy(card => card.rank);
+
+        }
+
         public static bool CalculateStraight(this List<Card> cards)
         {
 
