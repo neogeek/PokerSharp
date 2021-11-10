@@ -2,8 +2,6 @@
 
 > PokerSharp is a small poker hand evaluation library.
 
-[![Build Status](https://travis-ci.com/neogeek/PokerSharp.svg?branch=master)](https://travis-ci.com/neogeek/PokerSharp)
-
 ## Install
 
 Download latest [release](https://github.com/neogeek/poker-sharp/releases).
