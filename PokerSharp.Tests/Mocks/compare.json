@@ -1,142 +1,322 @@
 {
-    "compare": [
+  "compare": [
+    {
+      "winner": 1,
+      "hands": [
         {
-            "winner": 1,
-            "hands": [
-                {
-                    "cards": [
-                        { "suit": 0, "rank": 8 },
-                        { "suit": 0, "rank": 7 },
-                        { "suit": 0, "rank": 6 },
-                        { "suit": 0, "rank": 3 },
-                        { "suit": 0, "rank": 4 }
-                    ]
-                },
-                {
-                    "cards": [
-                        { "suit": 0, "rank": 5 },
-                        { "suit": 1, "rank": 5 },
-                        { "suit": 2, "rank": 5 },
-                        { "suit": 3, "rank": 5 },
-                        { "suit": 0, "rank": 4 }
-                    ]
-                }
-            ]
+          "cards": [
+            {
+              "suit": 0,
+              "rank": 8
+            },
+            {
+              "suit": 0,
+              "rank": 7
+            },
+            {
+              "suit": 0,
+              "rank": 6
+            },
+            {
+              "suit": 0,
+              "rank": 3
+            },
+            {
+              "suit": 0,
+              "rank": 4
+            }
+          ]
         },
         {
-            "winner": 1,
-            "hands": [
-                {
-                    "cards": [
-                        { "suit": 1, "rank": 6 },
-                        { "suit": 2, "rank": 6 },
-                        { "suit": 3, "rank": 6 },
-                        { "suit": 0, "rank": 6 },
-                        { "suit": 1, "rank": 1 }
-                    ]
-                },
-                {
-                    "cards": [
-                        { "suit": 1, "rank": 7 },
-                        { "suit": 2, "rank": 7 },
-                        { "suit": 3, "rank": 7 },
-                        { "suit": 0, "rank": 7 },
-                        { "suit": 1, "rank": 2 }
-                    ]
-                }
-            ]
-        },
-        {
-            "winner": 0,
-            "hands": [
-                {
-                    "cards": [
-                        { "suit": 1, "rank": 8 },
-                        { "suit": 2, "rank": 8 },
-                        { "suit": 3, "rank": 8 },
-                        { "suit": 0, "rank": 8 },
-                        { "suit": 1, "rank": 1 }
-                    ]
-                },
-                {
-                    "cards": [
-                        { "suit": 1, "rank": 7 },
-                        { "suit": 2, "rank": 7 },
-                        { "suit": 3, "rank": 7 },
-                        { "suit": 0, "rank": 7 },
-                        { "suit": 1, "rank": 2 }
-                    ]
-                }
-            ]
-        },
-        {
-            "winner": 1,
-            "hands": [
-                {
-                    "cards": [
-                        { "suit": 3, "rank": 7 },
-                        { "suit": 0, "rank": 7 },
-                        { "suit": 1, "rank": 2 },
-                        { "suit": 2, "rank": 13 },
-                        { "suit": 1, "rank": 9 }
-                    ]
-                },
-                {
-                    "cards": [
-                        { "suit": 3, "rank": 12 },
-                        { "suit": 2, "rank": 3 },
-                        { "suit": 2, "rank": 13 },
-                        { "suit": 2, "rank": 13 },
-                        { "suit": 1, "rank": 9 }
-                    ]
-                }
-            ]
-        },
-        {
-            "winner": 1,
-            "hands": [
-                {
-                    "cards": [
-                        { "suit": 0, "rank": 7 },
-                        { "suit": 1, "rank": 7 },
-                        { "suit": 1, "rank": 1 },
-                        { "suit": 1, "rank": 2 },
-                        { "suit": 1, "rank": 3 }
-                    ]
-                },
-                {
-                    "cards": [
-                        { "suit": 2, "rank": 7 },
-                        { "suit": 3, "rank": 7 },
-                        { "suit": 2, "rank": 1 },
-                        { "suit": 2, "rank": 2 },
-                        { "suit": 2, "rank": 4 }
-                    ]
-                }
-            ]
-        },
-        {
-            "winner": 0,
-            "hands": [
-                {
-                    "cards": [
-                        { "suit": 0, "rank": 7 },
-                        { "suit": 1, "rank": 7 },
-                        { "suit": 1, "rank": 3 },
-                        { "suit": 2, "rank": 3 },
-                        { "suit": 2, "rank": 2 }
-                    ]
-                },
-                {
-                    "cards": [
-                        { "suit": 2, "rank": 7 },
-                        { "suit": 3, "rank": 7 },
-                        { "suit": 1, "rank": 2 },
-                        { "suit": 2, "rank": 2 },
-                        { "suit": 2, "rank": 4 }
-                    ]
-                }
-            ]
+          "cards": [
+            {
+              "suit": 0,
+              "rank": 5
+            },
+            {
+              "suit": 1,
+              "rank": 5
+            },
+            {
+              "suit": 2,
+              "rank": 5
+            },
+            {
+              "suit": 3,
+              "rank": 5
+            },
+            {
+              "suit": 0,
+              "rank": 4
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "winner": 1,
+      "hands": [
+        {
+          "cards": [
+            {
+              "suit": 1,
+              "rank": 6
+            },
+            {
+              "suit": 2,
+              "rank": 6
+            },
+            {
+              "suit": 3,
+              "rank": 6
+            },
+            {
+              "suit": 0,
+              "rank": 6
+            },
+            {
+              "suit": 1,
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "cards": [
+            {
+              "suit": 1,
+              "rank": 7
+            },
+            {
+              "suit": 2,
+              "rank": 7
+            },
+            {
+              "suit": 3,
+              "rank": 7
+            },
+            {
+              "suit": 0,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "winner": 0,
+      "hands": [
+        {
+          "cards": [
+            {
+              "suit": 1,
+              "rank": 8
+            },
+            {
+              "suit": 2,
+              "rank": 8
+            },
+            {
+              "suit": 3,
+              "rank": 8
+            },
+            {
+              "suit": 0,
+              "rank": 8
+            },
+            {
+              "suit": 1,
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "cards": [
+            {
+              "suit": 1,
+              "rank": 7
+            },
+            {
+              "suit": 2,
+              "rank": 7
+            },
+            {
+              "suit": 3,
+              "rank": 7
+            },
+            {
+              "suit": 0,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "winner": 1,
+      "hands": [
+        {
+          "cards": [
+            {
+              "suit": 3,
+              "rank": 7
+            },
+            {
+              "suit": 0,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 2
+            },
+            {
+              "suit": 2,
+              "rank": 13
+            },
+            {
+              "suit": 1,
+              "rank": 9
+            }
+          ]
+        },
+        {
+          "cards": [
+            {
+              "suit": 3,
+              "rank": 12
+            },
+            {
+              "suit": 2,
+              "rank": 3
+            },
+            {
+              "suit": 2,
+              "rank": 13
+            },
+            {
+              "suit": 2,
+              "rank": 13
+            },
+            {
+              "suit": 1,
+              "rank": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "winner": 1,
+      "hands": [
+        {
+          "cards": [
+            {
+              "suit": 0,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 1
+            },
+            {
+              "suit": 1,
+              "rank": 2
+            },
+            {
+              "suit": 1,
+              "rank": 3
+            }
+          ]
+        },
+        {
+          "cards": [
+            {
+              "suit": 2,
+              "rank": 7
+            },
+            {
+              "suit": 3,
+              "rank": 7
+            },
+            {
+              "suit": 2,
+              "rank": 1
+            },
+            {
+              "suit": 2,
+              "rank": 2
+            },
+            {
+              "suit": 2,
+              "rank": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "winner": 0,
+      "hands": [
+        {
+          "cards": [
+            {
+              "suit": 0,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 3
+            },
+            {
+              "suit": 2,
+              "rank": 3
+            },
+            {
+              "suit": 2,
+              "rank": 2
+            }
+          ]
+        },
+        {
+          "cards": [
+            {
+              "suit": 2,
+              "rank": 7
+            },
+            {
+              "suit": 3,
+              "rank": 7
+            },
+            {
+              "suit": 1,
+              "rank": 2
+            },
+            {
+              "suit": 2,
+              "rank": 2
+            },
+            {
+              "suit": 2,
+              "rank": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
