@@ -27,6 +27,7 @@ jobs:
 
     - name: Git commit changes
       run: |
+        git pull
         git add CHANGELOG.md
         git commit -m "Updated CHANGELOG.md [skip ci]" || exit 0
         git push origin main

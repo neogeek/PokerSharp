@@ -39,6 +39,7 @@ jobs:
 
     - name: Git commit changes
       run: |
+        git pull
         git add UnityPackage/Libs/
         git commit -m "Updated PokerSharp.dll [skip ci]" || exit 0
         git push origin main
