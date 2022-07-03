@@ -8,6 +8,10 @@
 
 Download latest [release](https://github.com/neogeek/poker-sharp/releases).
 
+or via UPM
+
+<https://github.com/neogeek/PokerSharp.git?path=/UnityPackage>
+
 ## Usage
 
 ### EvaluateHand.DetermineHandRankings
