@@ -30,7 +30,7 @@ jobs:
       run: dotnet build PokerSharp/*.csproj --configuration Release
 
     - name: Copy Release to Unity Package
-      run: yes | cp -r PokerSharp/bin/Release/netstandard2.0/PokerSharp.dll UnityPackage/Libs/
+      run: yes | cp -r PokerSharp/bin/Release/netstandard2.1/PokerSharp.dll UnityPackage/Libs/
 
     - name: Setup git
       run: |

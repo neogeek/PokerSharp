@@ -33,6 +33,6 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: PokerSharp/bin/Release/netstandard2.0/PokerSharp.dll
+        file: PokerSharp/bin/Release/netstandard2.1/PokerSharp.dll
         asset_name: PokerSharp.dll
         tag: ${{ github.ref }}
