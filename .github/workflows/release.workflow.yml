@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+env:
+  DOTNET_VERSION: '6.0'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Store tag in local ENV
+      run: echo "TAG_VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+    - name: Build Release
+      run: dotnet build PokerSharp/*.csproj --configuration Release -p:Version=$(echo "${{env.TAG_VERSION}}" | sed 's/v//g')
+
+    - name: Upload Release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: PokerSharp/bin/Release/netstandard2.0/PokerSharp.dll
+        asset_name: PokerSharp.dll
+        tag: ${{ github.ref }}
