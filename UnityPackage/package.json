@@ -1,0 +1,7 @@
+{
+  "name": "com.scottdoxey.pokersharp",
+  "displayName": "PokerSharp",
+  "version": "1.2.0",
+  "unity": "2021.3",
+  "description": "PokerSharp is a small poker hand evaluation library."
+}

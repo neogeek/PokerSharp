@@ -1,0 +1,44 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    paths:
+    - '**.cs'
+    - '**.csproj'
+
+env:
+  DOTNET_VERSION: '6.0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Build Release
+      run: dotnet build PokerSharp/*.csproj --configuration Release
+
+    - name: Copy Release to Unity Package
+      run: yes | cp -r PokerSharp/bin/Release/netstandard2.0/PokerSharp.dll UnityPackage/Libs/
+
+    - name: Setup git
+      run: |
+        git config user.name "neogeek-bot"
+        git config user.email "neogeek0101+bot@gmail.com"
+
+    - name: Git commit changes
+      run: |
+        git add UnityPackage/Libs/
+        git commit -m "Updated PokerSharp.dll [skip ci]" || exit 0
+        git push origin main
