@@ -79,7 +79,7 @@ namespace PokerSharp.Tests
             var winner =
                 DetermineWinner.CalculateHighestHandRanking(player1Hand, player2Hand);
 
-            Assert.AreEqual(player1Hand, winner);
+            Assert.That(winner, Is.EqualTo(player1Hand));
 
         }
 
@@ -102,7 +102,14 @@ namespace PokerSharp.Tests
                 var winner =
                     DetermineWinner.CalculateHighestHandRanking(player1Hand, player2Hand);
 
-                Assert.AreEqual(handsMockData.winner == 0 ? player1Hand : player2Hand, winner);
+                if (handsMockData.winner == 0)
+                {
+                    Assert.That(winner, Is.EqualTo(player1Hand));
+                }
+                else
+                {
+                    Assert.That(winner, Is.EqualTo(player2Hand));
+                }
 
             }
 

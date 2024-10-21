@@ -24,8 +24,8 @@ namespace PokerSharp.Tests
                     new Card { suit = Card.Suit.Clubs, rank = 14 }, new Card { suit = Card.Suit.Diamonds, rank = 5 }
                 });
 
-            Assert.AreEqual(Card.Suit.Spades, bestCardToPlay.suit);
-            Assert.AreEqual(14, bestCardToPlay.rank);
+            Assert.That(bestCardToPlay.suit, Is.EqualTo(Card.Suit.Spades));
+            Assert.That(bestCardToPlay.rank, Is.EqualTo(14));
 
         }
 
