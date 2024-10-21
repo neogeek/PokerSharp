@@ -35,7 +35,7 @@ namespace PokerSharp.Tests
         public void TestSimpleHand()
         {
 
-            Assert.AreEqual(HandRanking.FourOfAKind,
+            Assert.That(
                 new List<Card>
                 {
                     new Card { suit = Card.Suit.Clubs, rank = 5 },
@@ -43,7 +43,7 @@ namespace PokerSharp.Tests
                     new Card { suit = Card.Suit.Hearts, rank = 5 },
                     new Card { suit = Card.Suit.Spades, rank = 5 },
                     new Card { suit = Card.Suit.Clubs, rank = 4 }
-                }.DetermineHandRankings());
+                }.DetermineHandRankings(), Is.EqualTo(HandRanking.FourOfAKind));
 
         }
 
@@ -57,7 +57,7 @@ namespace PokerSharp.Tests
 
             foreach (var hand in handsMockData.hands)
             {
-                Assert.AreEqual(hand.name, hand.cards.DetermineHandRankings().ToString());
+                Assert.That(hand.cards.DetermineHandRankings().ToString(), Is.EqualTo(hand.name));
             }
         }
 
@@ -76,14 +76,15 @@ namespace PokerSharp.Tests
 
             hand.handRanking = hand.DetermineHandRankings();
 
-            Assert.AreEqual(new List<int>
-            {
-                5,
-                5,
-                2,
-                2,
-                3
-            }, hand.SortCardsByRanking(hand.handRanking).Select(card => card.rank));
+            Assert.That(hand.SortCardsByRanking(hand.handRanking).Select(card => card.rank),
+                Is.EqualTo(new List<int>
+                {
+                    5,
+                    5,
+                    2,
+                    2,
+                    3
+                }));
 
         }
 
@@ -102,14 +103,15 @@ namespace PokerSharp.Tests
 
             hand.handRanking = hand.DetermineHandRankings();
 
-            Assert.AreEqual(new List<int>
-            {
-                2,
-                3,
-                4,
-                5,
-                6
-            }, hand.SortCardsByRanking(hand.handRanking).Select(card => card.rank));
+            Assert.That(hand.SortCardsByRanking(hand.handRanking).Select(card => card.rank),
+                Is.EqualTo(new List<int>
+                {
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                }));
 
         }
 
